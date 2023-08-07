@@ -1,0 +1,80 @@
+@import url("./styles/header-style.css");
+@import url("./styles/hero-style.css");
+@import url("./styles/about-style.css");
+@import url("./styles/skills-style.css");
+@import url("./styles/project-style.css");
+@import url("./styles/interest-style.css");
+@import url("./styles/contact-style.css");
+/* @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Poppins:wght@300&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins', 'sans-serif';
+    text-transform: capitalize;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+:root{
+
+    --PrimaryColor:#1589ff;
+    --PrimaryHoverColor:#0e5fb2;
+    --SecondaryColor:#000000;
+    --FontColor:#ffffff;
+    --MainColor: #040416;
+    --MainTrans: #040416f3;
+    --MainTrans-2:#040416d7;
+    --AboutBackground:#040416f8;
+    --HeadingBackground:#040416a6;
+    --TypingColor:#458a9c;
+    --ProgressBackground:#05091a69;
+    --SkillImage:url("../icons/scattered-forcefields.svg");
+    --CardBackground:#041b33;
+    --ExperienceColor:#0404168a;
+    
+} 
+
+.changeTheme{
+
+  --PrimaryColor:#1589ff;
+  --PrimaryHoverColor:#0e5fb2;
+  --SecondaryColor:#000000;
+  --FontColor:#ffffff;
+  --MainColor: #023047;
+  --MainTrans: #023047f3;
+  --MainTrans-2:#023047d7;
+  --AboutBackground:#023047f8;
+  --HeadingBackground:#02293da6;
+  --TypingColor:#458a9c;
+  --ProgressBackground:#02131c69;
+  --SkillImage:url("../icons/scattered-forcefield.svg");
+  --CardBackground:#041b33;
+  --ExperienceColor:#0230478a;
+
+}
+
+   
+ h1{
+    color: #1589ff;
+    text-shadow: 2px 2px 10px #1589ff;
+    text-transform: uppercase;
+      
+  }
+  
+  
+ hr{
+    height: 2px;
+    width: 100px;
+    background: #1589ff;  
+    box-shadow: 2px 2px 10px #1589ff;
+    text-transform: uppercase;
+  }
+
+

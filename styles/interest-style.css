@@ -1,0 +1,255 @@
+.interest{
+
+    display: flex;
+    flex-direction: column;
+    padding: 60px 60px 60px 60px;
+    background: var(--MainTrans);  
+   
+}
+
+
+.interest-container{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 12px;
+  background: var(--MainColor);
+ 
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  gap: 60px;
+  padding: 8px 0;
+ 
+}
+
+.interest__title{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  
+}
+
+
+.tilt-card-wrapper{
+   position: relative; 
+
+}
+
+
+.card {
+    display: flex;
+    width: 290px;
+    height: 390px;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 1);
+    border-radius: 0.5rem;
+    border: 3px solid var(--PrimaryColor);
+    background: linear-gradient(45deg,#fa0085,#0300bb);
+    box-shadow: 1px 1px 15px var(--PrimaryColor);
+    margin: 8px;
+    transition:all 820ms ease-in-out;
+    
+   
+    
+
+  }
+
+  .interest__title:hover .card{
+    box-shadow: 1px 50px 500px var(--PrimaryColor);
+    
+  }
+
+  .card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  .card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 0.5rem;
+    transition: opacity 300ms;
+    
+  }
+  
+  .tilt-card-wrapper:hover .card-img-wrapper img {
+    opacity: 0.6;
+  }
+  
+  .card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 1.8rem;
+    text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.6);
+    opacity: 0; 
+    visibility: hidden; 
+    transition: all 820ms;
+  }
+  
+  .tilt-card-wrapper:hover .card-info {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .card-info h2 {
+ 
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: #eee;
+  }
+  
+  .card-info h3 {
+    font-family: "Muli", serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #458a9c;
+    margin-bottom: 1rem;
+  }
+  
+  .card-info p {
+    
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    color: #d0c5c5;
+    width: 80%;
+    margin-bottom: 2rem;
+
+  }
+
+
+  .card-info a:hover {
+    
+    cursor: pointer;
+    color: #eee;
+
+  }
+  
+
+  .read-more {
+    width: 8.4rem;
+    height: 2.8rem;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: var(--PrimaryColor);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.8rem var(--PrimaryColor);
+    cursor: pointer;
+  }
+
+
+  .read-more:hover {
+    box-shadow: 0 0.1rem 0.8rem var(--PrimaryColor);
+    background-color: var(--PrimaryHoverColor);
+    color: var(--FontColor);
+    cursor: pointer;
+  }
+
+
+  .hover-point {
+    position: absolute;
+    z-index: 2;
+    width: calc(100% / 3);
+    height: calc(100% / 3);
+
+  }
+  .hover-point:nth-child(1) {
+    top: 0;
+    left: 0;
+    
+  }
+  .hover-point:nth-child(2) {
+    top: 0;
+    left: calc(100% / 3);
+ 
+  }
+  .hover-point:nth-child(3) {
+    top: 0;
+    right: 0;
+    
+  }
+  .hover-point:nth-child(4) {
+    top: calc(100% / 3);
+    left: 0;
+
+  }
+  .hover-point:nth-child(5) {
+    top: calc(100% / 3);
+    right: 0;
+ 
+  }
+  .hover-point:nth-child(6) {
+    bottom: 0;
+    left: 0;
+  
+  }
+  .hover-point:nth-child(7) {
+    bottom: 0;
+    left: calc(100% / 3);
+   
+  }
+  .hover-point:nth-child(8) {
+    bottom: 0;
+    right: 0;
+   
+  }
+
+ 
+  
+.hover-point:nth-child(1):hover ~ .card {
+
+  transform-origin: right top;
+  transform: perspective(600px) rotateX(5deg) rotateY(-5deg) rotateZ(2deg);
+}
+.hover-point:nth-child(2):hover ~ .card {
+  
+  transform-origin: center top;
+  transform: perspective(650px) rotateX(5deg);
+}
+.hover-point:nth-child(3):hover ~ .card {
+ 
+  transform-origin: left top;
+  transform: perspective(650px) rotateX(5deg) rotateY(5deg) rotateZ(-2deg);
+}
+.hover-point:nth-child(4):hover ~ .card {
+ 
+  transform-origin: left center;
+  transform: perspective(450px) rotateY(-5deg);
+}
+.hover-point:nth-child(5):hover ~ .card {
+ 
+  transform-origin: right center;
+  transform: perspective(450px) rotateY(5deg);
+}
+.hover-point:nth-child(6):hover ~ .card {
+ 
+  transform-origin: right bottom;
+  transform: perspective(500px) rotateX(-5deg) rotateY(-5deg) rotateZ(-2deg);
+}
+.hover-point:nth-child(7):hover ~ .card {
+  transform-origin: center bottom;
+  transform: perspective(650px) rotateX(-5deg);
+}
+.hover-point:nth-child(8):hover ~ .card {
+  transform-origin: left bottom;
+  transform: perspective(500px) rotateX(-5deg) rotateY(5deg) rotateZ(2deg);
+}

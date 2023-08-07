@@ -1,0 +1,271 @@
+
+	header{
+		background-image: linear-gradient(-45deg,var(--MainColor),var(--MainColor));
+		text-align: center;
+		position: relative;
+		z-index: 999;
+		width: 100%;
+		padding: 22px 0;
+
+	}
+ 
+	header h2{
+		color: #11ffef00;
+	}
+
+	nav{
+		color: var(--FontColor);
+		position: absolute;
+		text-align: left;
+		top: 100%;
+		left: 0;
+		background-image: linear-gradient(-45deg,var(--MainTrans-2),var(--MainColor)),url("../icons/971.png");
+		width: 100%;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		transform:scale(1,0);
+		transform-origin:  center;
+		transition:transform 520ms ease-in-out
+		
+	}
+
+	.switch-mode{
+		width: 40px;
+		margin: 8px;
+		cursor: pointer;
+		transition: transform 800ms ease;
+	}
+
+	.switch-mode:hover{
+		transform: scale(1.06);
+	}
+	.list-icon-wrapper{
+		display: flex;
+		flex-direction: row;
+		margin:20px 0 ;
+		align-items: center;
+	}
+
+	.list-wrapper{
+		width: 70%;
+	}
+
+	.media-wrapper{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		border-radius: 50px;
+		box-shadow: 0px 0px 4px var(--PrimaryColor);
+		margin: 12px;
+		transition:transform 700ms ease-out;
+		background: transparent;
+	}
+	.media-icon img{
+		height: 30px;
+		width: 30px;
+		margin: 8px;
+		transition: 700ms ease-in-out;
+		
+	}
+
+	.media-wrapper:hover{
+		box-shadow: 0px 0px 10px  var(--PrimaryColor);
+		transform: translate(5px,-5px);
+	}
+
+	.media-icon img:hover{
+		transform: rotate(360deg);
+		cursor: pointer;
+	}
+
+
+	nav li{
+		margin-bottom: 1em;
+		margin-left: 1em;
+        
+        
+	}
+
+	nav a{
+		color: var(--FontColor);
+		font-size: 1rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		opacity: 1;
+        transition-property: padding;
+		transition: all 400ms ease-in-out;
+	}
+
+
+     nav a:hover{ 
+    
+        color: var(--PrimaryColor);
+        padding: 6px;
+        font-weight: 700;
+        font-stretch: wider;
+        box-shadow: 2px 2px 4px var(--PrimaryColor);
+        border-radius: 3px;
+        mask-border-slice: initial;
+		
+        
+    } 
+
+	.nav-toggle:checked ~ nav {
+		transform: scale(1,1);
+	 }
+
+	 .nav-toggle{
+		display: none;
+	}
+
+	.nav-toggle-label{
+		position: absolute;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+		margin-left: 1em;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	.nav-toggle-label span,
+	.nav-toggle-label span::before,
+	.nav-toggle-label span::after{
+		display: block;
+		background: var(--FontColor);
+		height: 2px;
+		width: 2em;
+		border-radius: 2px;
+		position: relative;
+		
+	}
+
+	.nav-toggle-label span::before,
+	.nav-toggle-label span::after{
+		content: '';
+		position: absolute;
+	}
+
+	.nav-toggle-label span::before{
+		bottom: 7px;
+	}
+
+	.nav-toggle-label span::after{
+		top: 7px;
+	}
+
+
+
+
+
+
+   
+
+
+	@media screen and (min-width:800px){
+
+		 header{
+			
+			display: flex;
+			flex-direction: row;
+			justify-content:center;
+			align-items: center;
+			padding:  0;
+		}
+
+		
+
+		
+	.list-wrapper{
+		width: 100%;
+	}
+
+		.nav-toggle-label{
+			display: none;
+		}
+
+
+
+		nav{
+
+			all: unset;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+		}
+
+		
+		nav a:hover{ 
+    
+			padding: 0px;
+			font-weight: 700;
+			font-stretch: wider;
+			box-shadow:none;
+			border-radius: 0px;
+			mask-border-slice: inherit;
+			
+		} 
+
+
+		nav a{
+
+			opacity: 1;
+		}
+
+
+		nav ul{
+
+			display: flex;
+			padding: 3px;
+		}
+		
+
+		nav li{
+			margin-left: 3em;
+			margin-bottom: 0;
+		}
+
+		.media-wrapper{
+			
+			box-shadow: 0px 0px 5px var(--PrimaryColor);
+			
+		}
+
+
+		
+		 nav a::before{
+			content: '';
+			display: block;
+			height: 5px;
+			background: var(--PrimaryColor);
+			margin-bottom: 10px;
+			transform: scale(0,1);
+			transition: transform ease-in-out 250ms;
+		} 
+
+
+		nav a:hover::before{
+			transform: scale(1,1);
+		} 
+	}
+	/*=================================================================================================================*/
+
+	.footer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 18px;
+		background-image:linear-gradient(-45deg,var(--MainColor),var(--MainColor));
+	}
+
+
+	.copy-right p{
+		font: caption;
+		font-size: 1.rem;
+		font-weight: 500;
+		color: rgb(179, 174, 174);
+	}
+
