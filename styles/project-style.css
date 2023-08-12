@@ -27,8 +27,8 @@
     .project__card{
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 20px;
+      justify-content: space-between;
+      gap: 50px;
       flex-wrap: wrap;
       flex-shrink: 1;
       flex-grow: 1;
@@ -122,10 +122,6 @@
       cursor: pointer;
     }
 
-    .back,.next{
-      width: 50px;
-      cursor: pointer;
-    }
     
     [class*='mygallery-'] div img:hover{
       filter: grayscale(0);
@@ -139,6 +135,8 @@
     .card-1 h4{
     
       font-size: 1.6em;
+      color:#ffd700;
+      align-self: start;
 
      }
   
@@ -148,21 +146,20 @@
       }
     .card-1 button{
     
-     align-self: flex-start;
-     height: 54px;
-     width: 54px;
-     padding: 10px;
+     height: 40px;
+     width: 100%;
+     /* padding: 10px; */
      margin: 8px;
      color: var(--FontColor);
      font-size: 1.1rem;
      font-weight: 600;
+     font-family: monospace;
      text-align: center;
      background-color: var(--PrimaryColor);
-     border-radius: 50%;
+     border-radius: 5px;
      border: none;
      transition: all 820ms ease;
     }
-  
 
 
     .card__icon{

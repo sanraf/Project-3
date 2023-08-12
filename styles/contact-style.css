@@ -182,7 +182,7 @@ input[type=text] {
 }
  
 
-@media screen and (min-width:900px){
+@media screen and (min-width:800px){
 
   .space-float {
     display: flex;
